@@ -1,0 +1,40 @@
+﻿  Scene.c
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(224,28): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(225,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(226,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(227,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(230,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(231,38): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(232,38): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(233,40): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(236,28): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(237,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(238,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(239,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(242,29): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(243,33): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(244,33): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(245,35): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(248,29): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(249,33): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(250,33): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\SDL Game Framework\Scene.c(251,35): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+  SDL Game Framework.vcxproj -> C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\x64\Debug\SDL Game Framework.exe
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libFLAC-8.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libjpeg-9.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libmodplug-1.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libmpg123-0.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libogg-0.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libopus-0.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libopusfile-0.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libpng16-16.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libtiff-5.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libvorbis-0.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libvorbisfile-3.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\libwebp-7.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\SDL2.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\SDL2_image.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\SDL2_mixer.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\SDL2_ttf.dll
+  C:\HumanAfterAll\SOS_HumanAfterAll\SDL Game Framework\External\Lib\SDL2\zlib1.dll
+         17개 파일이 복사되었습니다.
