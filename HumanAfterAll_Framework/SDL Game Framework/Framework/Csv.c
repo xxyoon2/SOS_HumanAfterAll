@@ -10,7 +10,7 @@ void readFileToBuffer(const char* filename)
 	sprintf_s(s_Path, sizeof(s_Path), "%s/%s", DATA_DIRECTORY, filename);
 
 	FILE* fp;
-	if (0 != fopen_s(&fp, s_Path, "r"))
+	if (0 != fopen_s(&fp, s_Path, "r")) // F5 눌러서 중단점에 디버그 찍으면 s_Path가 파일 경로인데 Asset/Data/안을 경로로 탐색하고 있어서 오류가 났던것 같아요
 	{
 		return;
 	}
@@ -133,7 +133,7 @@ char* ParseToAscii(const CsvItem item)
 	int size = strlen(item.RawData);
 	char* result = malloc(size + 1);
 	memset(result, 0, size + 1);
-	if (item.RawData[0] == '"' && item.RawData[size - 1] == '"')
+	if (item.RawData[0] == '&' && item.RawData[size - 1] == '&')
 	{
 		memcpy(result, &item.RawData[1], size - 2);
 	}

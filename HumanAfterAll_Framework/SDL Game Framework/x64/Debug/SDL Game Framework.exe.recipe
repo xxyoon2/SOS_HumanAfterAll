@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\metaverse\SOS_HumanAfterAll\HumanAfterAll_Framework\x64\Debug\SDL Game Framework.exe</FullPath>
+      <FullPath>C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\x64\Debug\SDL Game Framework.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

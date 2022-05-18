@@ -127,38 +127,73 @@ void release_description()
 	가끔 연출이 필요할 수도 있음
 */
 
+#define SOLID 0
+#define SHADED 1
+#define BLENDED 2
+
 CsvFile csvFile;
+Text CsvText[500][500];
+bool isCreated = false;
+
+typedef struct MainSceneOption
+{
+	//선택지 1 / 선택지 1에 대한 씬 번호 / 선택지 2 / 선택지 2에 대한 씬 번호 / 선택지 3(타이머로 인한 선택지) / 선택지 3에 대한 씬 번호 / 엔딩 옵션
+	int32 SceneNumber;
+	int32 SceneOption;
+	int32 TimerOption;
+	Image BackgroundImage;
+	Music BackgroundMusic;
+	Text StoryText;
+	//선택지를 어떻게 주지..?
+	int32 EndingOption;
+
+
+} MainSceneOption;
+
+typedef struct StorySceneData
+{
+	Text	TestText;
+	int32	FontSize;
+	int32	RenderMode;
+	Image	TestImage;
+} StorySceneData;
 
 void init_story()
 {
-	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+	if (!isCreated)
+	{
+		CreateCsvFile(&csvFile, "HumanAfterAll.csv");  // 희희 
+		isCreated = true;
+	}
+	//CreateCsvFile(&csvFile, "test.csv");  // 희희 
 
-	
-	memset(&csvFile, 0, sizeof(CsvFile));
-	CreateCsvFile(&csvFile, "test.csv");
+	g_Scene.Data = malloc(sizeof(StorySceneData));
+	memset(g_Scene.Data, 0, sizeof(StorySceneData));
 
-	// CSV 파일 파싱한 후 텍스트 그려본 다음
-	// 유니코드 제대로 출력 안되면
-	// App_Init()에 아래 구문 추가
-	// setlocale(LC_ALL, "kr_KR.utf8");
+	StorySceneData* data = (StorySceneData*)g_Scene.Data;
 
 	for (int r = 0; r < csvFile.RowCount; ++r)
 	{
 		for (int c = 0; c < csvFile.ColumnCount; ++c)
 		{
-			char* str = ParseToAscii(csvFile.Items[r][c]);
-			printf("%s", str);
+			wchar_t* str = ParseToUnicode(csvFile.Items[r][c]);
+			Text_CreateText(&CsvText[c][r], "d2coding.ttf", 16, str, wcslen(str));
 			free(str);
 		}
-
-		puts("");
 	}
+
+
+	data->FontSize = 24;
+
+	data->RenderMode = SOLID;
+
 
 }
 
 void update_story()
 {
-	//StorySceneData* data = (StorySceneData*)g_Scene.Data;
+	StorySceneData* data = (StorySceneData*)g_Scene.Data;
+
 
 	if (Input_GetKeyDown(VK_SPACE))
 	{
@@ -182,121 +217,20 @@ void update_story()
 
 void render_story()
 {
-
-}
-
-void release_story()
-{
-	FreeCsvFile(&csvFile);
-}
-#pragma endregion
-
-#pragma region CHOICE_SCENE
-/*
-타이머에 따른 선택창이 구현 되면 그때 건드리는 걸로
-*/
-
-#define SOLID 0
-#define SHADED 1
-#define BLENDED 2
-
-typedef struct StorySceneText
-{
-	Text SceneNumber;
-	Text SceneText;
-} StorySceneText;
-
-const wchar_t* str[] = {
-	L"아무것도 모르겠다",
-	L"정말 아무것도 모르겠다",
-	L"정말 난",
-	L"아무것도 모르겠다",
-	L"왜냐하면",
-	L"난",
-	L"아무것도 모르기 때문이다",
-	L"하나도 모르겠다",
-	L"살려줘",
-	L"...---..."
-};
-
-
-typedef struct StorySceneData
-{
-	/*Image StoryBackgroundImage;
-	Music StoryBGM;*/
-	//SoundEffect TitleSound;
-	Text	GuideLine[10];
-	Text	TestText;
-	int32	FontSize;
-	int32	RenderMode;
-	Image	TestImage;
-} StorySceneData;
-
-void init_choice()
-{
-	g_Scene.Data = malloc(sizeof(StorySceneData));
-	memset(g_Scene.Data, 0, sizeof(StorySceneData));
-
 	StorySceneData* data = (StorySceneData*)g_Scene.Data;
-	for (int32 i = 0; i < 10; ++i)
-	{
-		Text_CreateText(&data->GuideLine[i], "d2coding.ttf", 16, str[i], wcslen(str[i]));
-	}
-
-	data->FontSize = 24;
-	Text_CreateText(&data->TestText, "d2coding.ttf", data->FontSize, L"이 텍스트가 변합니다.", 13);
-
-	data->RenderMode = SOLID;
-
-	Image_LoadImage(&data->TestImage, "Background.jfif");
-}
-
-void update_choice()
-{
-	if (Input_GetKeyDown(VK_SPACE))
-	{
-
-	}
-
-	if (Input_GetKeyDown(VK_RETURN))
-	{
-
-	}
-
-	if (Input_GetKeyDown(VK_NUMPAD1))
-	{
-
-	}
-
-	if (Input_GetKeyDown(VK_NUMPAD2))
-	{
-
-	}
-
-	if (Input_GetKeyDown(VK_NUMPAD3))
-	{
-
-	}
-}
-
-void render_choice()
-{
-	/*
-		텍스트, 이미지, 사운드 모두 출력시킴
-	*/
-
-
-	StorySceneData* data = (StorySceneData*)g_Scene.Data;
-
 	SDL_Color color = { .a = 255 };
-	//Renderer_DrawTextSolid(&data->GuideLine[3], 10, 20 * 3, color);
-	for (int32 i = 0; i < 10; ++i)
-	{
-		SDL_Color color = { .a = 255 };
-		Renderer_DrawTextSolid(&data->GuideLine[i], 10, 20 * i, color);
-	}
 
-	switch (data->RenderMode)
+	for (int r = 0; r < csvFile.RowCount; ++r)
+	{
+		for (int c = 0; c < csvFile.ColumnCount; ++c)
+		{
+			Renderer_DrawTextSolid(&CsvText[c][r], 30 * c, 150 * r, color);
+		}
+	}
+	Renderer_DrawTextSolid(&CsvText[0][0], 150 * 0, 30 * 0, color);
+	//Renderer_DrawTextSolid(&data->TestText, 400, 400, color);
+
+	/*switch (data->RenderMode)
 	{
 	case SOLID:
 	{
@@ -318,26 +252,21 @@ void render_choice()
 		Renderer_DrawTextBlended(&data->TestText, 400, 400, color);
 	}
 	break;
-	}
+	}*/
 }
 
-void release_choice()
+void release_story()
 {
-	/*
-		스토리씬데이터 정리
-	*/
-
 	StorySceneData* data = (StorySceneData*)g_Scene.Data;
 
-	for (int32 i = 0; i < 10; ++i)
-	{
-		Text_FreeText(&data->GuideLine[i]);
-	}
+	
+	//Text_FreeText(&data->TestText);
 	Text_FreeText(&data->TestText);
-
 	SafeFree(g_Scene.Data);
 }
 #pragma endregion
+
+
 
 #pragma region ENDING_SCENE
 /*
@@ -416,12 +345,6 @@ void Scene_Change(void)
 		g_Scene.Update = update_story;
 		g_Scene.Render = render_story;
 		g_Scene.Release = release_story;
-		break;
-	case SCENE_CHOICE:
-		g_Scene.Init = init_choice;
-		g_Scene.Update = update_choice;
-		g_Scene.Render = render_choice;
-		g_Scene.Release = release_choice;
 		break;
 	case SCENE_ENDING:
 		g_Scene.Init = init_ending;
