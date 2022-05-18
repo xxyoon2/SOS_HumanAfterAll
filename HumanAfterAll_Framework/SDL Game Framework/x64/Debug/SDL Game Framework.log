@@ -1,21 +1,13 @@
-﻿  Scene.c
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(180,67): warning C4267: '함수': 'size_t'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(332,28): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(333,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(334,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(335,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(338,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(339,38): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(340,38): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(341,40): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(344,28): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(345,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(346,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(347,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(350,29): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(351,33): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(352,33): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(353,35): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+﻿  Csv.c
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(99,32): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(88,25): warning C4244: '초기화 중': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(133,19): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(150,45): warning C4047: '함수': 'DWORD'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(150,41): warning C4024: 'MultiByteToWideChar': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(150,75): warning C4047: '함수': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(150,71): warning C4024: 'MultiByteToWideChar': 형식 및 실제 매개 변수 6의 형식이 서로 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(152,34): warning C4047: '함수': 'DWORD'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(152,30): warning C4024: 'MultiByteToWideChar': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
   SDL Game Framework.vcxproj -> C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\x64\Debug\SDL Game Framework.exe
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\External\Lib\SDL2\libFLAC-8.dll
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\External\Lib\SDL2\libjpeg-9.dll
@@ -44,6 +36,7 @@ C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Fr
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\corridor_dark.png
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\corridor_stairs.jpg
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\corridor_underground.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\description.png
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\happyending.png
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\hospital_corridor.jpg
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\hospital_room.jpg
@@ -71,4 +64,4 @@ C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Fr
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Sound\serious_dark.mp3
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Sound\serious_piano.mp3
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Sound\space_bgm.mp3
-  36개 파일이 복사되었습니다.
+  37개 파일이 복사되었습니다.

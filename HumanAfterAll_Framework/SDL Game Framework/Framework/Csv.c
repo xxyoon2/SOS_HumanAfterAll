@@ -133,7 +133,7 @@ char* ParseToAscii(const CsvItem item)
 	int size = strlen(item.RawData);
 	char* result = malloc(size + 1);
 	memset(result, 0, size + 1);
-	if (item.RawData[0] == '&' && item.RawData[size - 1] == '&')
+	if (item.RawData[0] == '"' && item.RawData[size - 1] == '"')
 	{
 		memcpy(result, &item.RawData[1], size - 2);
 	}
@@ -150,6 +150,11 @@ wchar_t* ParseToUnicode(const CsvItem item)
 	int size = MultiByteToWideChar(CP_ACP, NULL, item.RawData, -1, NULL, NULL);
 	wchar_t* result = (wchar_t*)malloc(sizeof(wchar_t) * (size + 1));
 	MultiByteToWideChar(CP_ACP, NULL, item.RawData, -1, result, size);
+
+	if (item.RawData[0] == '"')
+	{
+		int a = 0;
+	}
 
 	return result;
 }
