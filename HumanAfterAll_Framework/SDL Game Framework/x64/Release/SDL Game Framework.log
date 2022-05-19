@@ -7,15 +7,15 @@ C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Fr
 C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Audio.c(152,49): warning C4244: '함수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Audio.c(151,23): warning C4244: '초기화 중': 'float'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Csv.c
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(99,32): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(88,25): warning C4244: '초기화 중': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(133,19): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(150,45): warning C4047: '함수': 'DWORD'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(150,41): warning C4024: 'MultiByteToWideChar': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(150,75): warning C4047: '함수': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(150,71): warning C4024: 'MultiByteToWideChar': 형식 및 실제 매개 변수 6의 형식이 서로 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(152,34): warning C4047: '함수': 'DWORD'의 간접 참조 수준이 'void *'과(와) 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(152,30): warning C4024: 'MultiByteToWideChar': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(104,32): warning C4090: '=': 'const' 한정자가 서로 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(90,25): warning C4244: '초기화 중': '__int64'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(138,19): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(155,45): warning C4047: '함수': 'DWORD'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(155,41): warning C4024: 'MultiByteToWideChar': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(155,75): warning C4047: '함수': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(155,71): warning C4024: 'MultiByteToWideChar': 형식 및 실제 매개 변수 6의 형식이 서로 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(157,34): warning C4047: '함수': 'DWORD'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Csv.c(157,30): warning C4024: 'MultiByteToWideChar': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
   Image.c
   Input.c
   Random.c
@@ -28,23 +28,23 @@ C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Fr
 C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Renderer.c(55,60): warning C4133: '함수': 'TTF_Font *const '과(와) 'TTF_Font *' 사이의 형식이 호환되지 않습니다.
 C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Renderer.c(67,61): warning C4133: '함수': 'TTF_Font *const '과(와) 'TTF_Font *' 사이의 형식이 호환되지 않습니다.
   Scene.c
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(165,67): warning C4267: '함수': 'size_t'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(318,28): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(319,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(320,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(321,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(324,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(325,38): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(326,38): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(327,40): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(330,28): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(331,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(332,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(333,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(336,29): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(337,33): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(338,33): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
-C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(339,35): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(178,67): warning C4267: '함수': 'size_t'에서 'int32'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(366,28): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(367,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(368,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(369,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(372,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(373,38): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(374,38): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(375,40): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(378,28): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(379,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(380,32): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(381,34): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(384,29): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(385,33): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(386,33): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
+C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Scene.c(387,35): warning C4113: 'void (__cdecl *)()'은(는) 'void (__cdecl *)(void)'과(와) 매개 변수 목록이 다릅니다.
   Text.c
 C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Text.c(37,26): warning C4133: '함수': 'TTF_Font *'과(와) 'TTF_Font *' 사이의 형식이 호환되지 않습니다.
 C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Framework\Text.c(49,27): warning C4133: '함수': 'TTF_Font *'과(와) 'TTF_Font *' 사이의 형식이 호환되지 않습니다.
@@ -56,8 +56,9 @@ C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Fr
   Window.c
   Main.c
   코드를 생성하고 있습니다.
-  Previous IPDB not found, fall back to full compilation.
-  All 60 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  17 of 61 functions (27.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    4 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
   SDL Game Framework.vcxproj -> C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\x64\Release\SDL Game Framework.exe
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\External\Lib\SDL2\libFLAC-8.dll
@@ -78,29 +79,113 @@ C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Fr
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\External\Lib\SDL2\SDL2_ttf.dll
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\External\Lib\SDL2\zlib1.dll
          17개 파일이 복사되었습니다.
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Test.csv
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Data\HumanAfterAll.csv
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Data\HumanAfterAll_test.csv
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Data\TEST.csv
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Font\d2coding.ttf
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\badending.png
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\corridor_bright.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\corridor_dark.png
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\corridor_stairs.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\corridor_underground.png
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\happyending.png
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\hospital_corridor.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\hospital_room.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\hospital_room_door_open.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\jail.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\jail_floor.webp
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\jail_steel.png
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\lab.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\lab_alt1.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\lab_alt2.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\lab_species.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\lab_underground.jpg
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\sadending1.png
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\sadending2.png
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scary_hospital_room.png
-  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\starting_image.jpg
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\centerinman.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\centerinmantext.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\description.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\dogkillyou.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\dogmeetlab.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\fadeout.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\oldmanandkidtext.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\predetorkillyou.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene1.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene10.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene101.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene102.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene11.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene12.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene13.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene14.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene15.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene16.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene17.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene18.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene19.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene2.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene20.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene21.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene22.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene23.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene24.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene25.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene26.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene27.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene28.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene29.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene3.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene30.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene31.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene32.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene33.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene34.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene35.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene36.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene37.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene38.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene39.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene4.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene40.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene41.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene42.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene43.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene44.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene45.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene46.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene47.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene48.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene49.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene5.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene50.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene51.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene52.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene53.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene54.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene55.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene56.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene57.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene58.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene59.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene6.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene60.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene61.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene62.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene63.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene64.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene65.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene66.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene67.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene68.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene69.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene7.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene70.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene71.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene72.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene73.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene74.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene75.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene76.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene77.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene78.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene79.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene8.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene80.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene81.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene82.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene83.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene84.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene85.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene86.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene87.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene88.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene89.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\scene90.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\shotyou.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\snece9.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\Title.png
+  C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Image\zombiekillyou.png
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Sound\game_over.mp3
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Sound\happy_ending.mp3
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Sound\meet_creature_first_fullver.mp3
@@ -112,4 +197,4 @@ C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Fr
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Sound\serious_dark.mp3
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Sound\serious_piano.mp3
   C:\HumanAfterAll\SOS_HumanAfterAll\HumanAfterAll_Framework\SDL Game Framework\Asset\Sound\space_bgm.mp3
-  34개 파일이 복사되었습니다.
+  118개 파일이 복사되었습니다.

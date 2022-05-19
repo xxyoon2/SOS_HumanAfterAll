@@ -31,7 +31,7 @@ void init_title()
 
 	TitleSceneData* data = (TitleSceneData*)g_Scene.Data;
 
-	Image_LoadImage(&data->TitleImage, "corridor_dark.png");
+	Image_LoadImage(&data->TitleImage, "Title.png");
 
 	Audio_LoadMusic(&data->TitleBGM, "space_bgm.mp3");
 	Audio_PlayFadeIn(&data->TitleBGM, INFINITY_LOOP, 3000);
@@ -135,7 +135,8 @@ CsvFile csvFile;
 Text CsvText[500][500];
 bool isCreated = false;
 
-int32 sceneNumber = 1;
+int sceneNumber = 1;
+char* imageName;
 
 typedef struct MainSceneOption
 {
@@ -160,7 +161,7 @@ void init_story()
 {
 	if (!isCreated)
 	{
-		CreateCsvFile(&csvFile, "HumanAfterAll.csv");  // »Ò»Ò 
+		CreateCsvFile(&csvFile, "TEST.csv");
 		isCreated = true;
 	}
 
@@ -169,15 +170,16 @@ void init_story()
 
 	StorySceneData* data = (StorySceneData*)g_Scene.Data;
 
-	for (int r = 0; r < csvFile.RowCount; ++r)
+	for (int r = 1; r < csvFile.RowCount; ++r)
 	{
 		for (int c = 0; c < csvFile.ColumnCount; ++c)
 		{
 			wchar_t* str = ParseToUnicode(csvFile.Items[r][c]);
 			Text_CreateText(&CsvText[r][c], "d2coding.ttf", 16, str, wcslen(str));
-			free(str);
 		}
 	}
+	
+
 
 	/*wchar_t* str = ParseToUnicode(csvFile.Items[sceneNumber][1]);
 
@@ -196,12 +198,10 @@ void init_story()
 	data->FontSize = 24;
 
 	data->RenderMode = SOLID;
+	Image_LoadImage(&data->BackgroundImage, imageName);
 
-
-	Image_LoadImage(&data->BackgroundImage, "scene1.png");
-
-	Audio_LoadMusic(&data->BackgroundMusic, "space_bgm.mp3");
-	Audio_PlayFadeIn(&data->BackgroundMusic, INFINITY_LOOP, 3000);
+	//Audio_LoadMusic(&data->BackgroundMusic, &imageName);
+	//Audio_PlayFadeIn(&data->BackgroundMusic, INFINITY_LOOP, 3000);
 
 
 }
@@ -223,7 +223,19 @@ void update_story()
 	{
 		++sceneNumber;
 	}
+	for (int r = 1; r < csvFile.RowCount; ++r)
+	{
+		for (int c = 0; c < csvFile.ColumnCount; ++c)
+		{
+			if (r == sceneNumber && c == 2)
+			{
+				imageName = ParseToAscii(csvFile.Items[r][c]);
 
+			}
+		}
+	}
+	Image_LoadImage(&data->BackgroundImage, imageName);
+	
 }
 
 void render_story()

@@ -90,13 +90,13 @@ void CreateCsvFile(CsvFile* csvFile, const char* filename)
 			int size = recordEnd - recordStart;
 			csvFile->Items[row][i].RawData = malloc(size + 1);
 			memcpy(csvFile->Items[row][i].RawData, recordStart, size);
-
+			csvFile->Items[row][i].RawData[size] = '\0';
 			/*
 				만약 개행문자가 존재한다면 그때 "" 빼주는 것을 삽입
 			*/
 
 			recordStart = recordEnd + 1;
-			recordEnd = recordStart;
+ 			recordEnd = recordStart;
 		}
 
 		++csvFile->RowCount;
