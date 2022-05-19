@@ -31,7 +31,7 @@ void init_title()
 
 	TitleSceneData* data = (TitleSceneData*)g_Scene.Data;
 
-	Image_LoadImage(&data->TitleImage, "corridor_bright.jpg");
+	Image_LoadImage(&data->TitleImage, "corridor_dark.png");
 
 	Audio_LoadMusic(&data->TitleBGM, "space_bgm.mp3");
 	Audio_PlayFadeIn(&data->TitleBGM, INFINITY_LOOP, 3000);
@@ -135,27 +135,25 @@ CsvFile csvFile;
 Text CsvText[500][500];
 bool isCreated = false;
 
+int32 sceneNumber = 1;
+
 typedef struct MainSceneOption
 {
 	//선택지 1 / 선택지 1에 대한 씬 번호 / 선택지 2 / 선택지 2에 대한 씬 번호 / 선택지 3(타이머로 인한 선택지) / 선택지 3에 대한 씬 번호 / 엔딩 옵션
-	int32 SceneNumber;	// 씬 번호
 	int32 SceneOption;	// 씬 옵션
 	bool TimerOption[4];	// 타이머 옵션
-	Image BackgroundImage;
-	Music BackgroundMusic;
 	Text StoryText;
-	//선택지를 어떻게 주지..?
-	int32 EndingOption;
-
-
 } MainSceneOption;
 
 typedef struct StorySceneData
 {
+	//int32	SceneNumber;	// 씬 번호
 	Text	TestText;
 	int32	FontSize;
 	int32	RenderMode;
 	Image	TestImage;
+	Image	BackgroundImage;
+	Music	BackgroundMusic;
 } StorySceneData;
 
 void init_story()
@@ -165,7 +163,6 @@ void init_story()
 		CreateCsvFile(&csvFile, "HumanAfterAll.csv");  // 희희 
 		isCreated = true;
 	}
-	//CreateCsvFile(&csvFile, "test.csv");  // 희희 
 
 	g_Scene.Data = malloc(sizeof(StorySceneData));
 	memset(g_Scene.Data, 0, sizeof(StorySceneData));
@@ -177,15 +174,21 @@ void init_story()
 		for (int c = 0; c < csvFile.ColumnCount; ++c)
 		{
 			wchar_t* str = ParseToUnicode(csvFile.Items[r][c]);
-			Text_CreateText(&CsvText[c][r], "d2coding.ttf", 16, str, wcslen(str));
+			Text_CreateText(&CsvText[r][c], "d2coding.ttf", 16, str, wcslen(str));
 			free(str);
 		}
 	}
 
+	/*wchar_t* str = ParseToUnicode(csvFile.Items[sceneNumber][1]);
+
+	Text_CreateText(&CsvText[sceneNumber][1], "d2coding.ttf", 16, str, wcslen(str));
+	free(str);*/
+
 	/*for (int c = 0; c < csvFile.ColumnCount; ++c)
 	{
-		wchar_t* str = ParseToUnicode(csvFile.Items[1][c]);
-		Text_CreateText(&CsvText[c][1], "d2coding.ttf", 16, str, wcslen(str));
+		wchar_t* str = ParseToUnicode(csvFile.Items[c][1]);
+		
+		Text_CreateText("d2coding.ttf", 16, str, wcslen(str));
 		free(str);
 	}*/
 
@@ -193,6 +196,12 @@ void init_story()
 	data->FontSize = 24;
 
 	data->RenderMode = SOLID;
+
+
+	Image_LoadImage(&data->BackgroundImage, "scene1.png");
+
+	Audio_LoadMusic(&data->BackgroundMusic, "space_bgm.mp3");
+	Audio_PlayFadeIn(&data->BackgroundMusic, INFINITY_LOOP, 3000);
 
 
 }
@@ -208,16 +217,11 @@ void update_story()
 			텍스트 줄단위로 스킵.
 			완전히 스킵이 되는 것이 아닌 텍스트가 출력되어있어야 함
 		*/
-
-
 	}
 
 	if (Input_GetKeyDown(VK_RETURN))
 	{
-		/*
-			다음 씬, 혹은 문단을 보여줌
-			완전히 스킵될 수도 있음
-		*/
+		++sceneNumber;
 	}
 
 }
@@ -235,12 +239,16 @@ void render_story()
 	//	}
 	//}
 
-	for (int r = 0; r < csvFile.RowCount; ++r)
+	Renderer_DrawImage(&data->BackgroundImage, 0, 0);
+
+	/*for (int r = 0; r < csvFile.RowCount; ++r)
 	{
-		Renderer_DrawTextSolid(&CsvText[1][r], 30 * 1, 150 * r, color);
-	}
-	Renderer_DrawTextSolid(&CsvText[0][0], 150 * 0, 30 * 0, color);
-	//Renderer_DrawTextSolid(&data->TestText, 400, 400, color);
+		Renderer_DrawTextSolid(&CsvText[1][r], 30 * 4, 150 * r, color);
+	}*/
+
+	//Renderer_DrawTextSolid(&CsvText[1][r], 30 * 4, 150 * r, color);
+	Renderer_DrawTextSolid(&CsvText[sceneNumber][1], 30 * 2, 150 * 1, color);
+	
 
 	/*switch (data->RenderMode)
 	{
@@ -271,10 +279,12 @@ void release_story()
 {
 	StorySceneData* data = (StorySceneData*)g_Scene.Data;
 
-	
+	Audio_FreeMusic(&data->BackgroundMusic);
 	//Text_FreeText(&data->TestText);
 	Text_FreeText(&data->TestText);
 	SafeFree(g_Scene.Data);
+
+	
 }
 #pragma endregion
 
