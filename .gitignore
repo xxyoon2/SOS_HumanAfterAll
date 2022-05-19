@@ -17,13 +17,14 @@
 *.pch
 
 # Libraries
-*.lib
 *.a
 *.la
 *.lo
 
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
 # Shared objects (inc. Windows DLLs)
-*.dll
 *.so
 *.so.*
 *.dylib
