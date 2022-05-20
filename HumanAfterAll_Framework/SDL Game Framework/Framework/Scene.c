@@ -2,6 +2,7 @@
 #include "Scene.h"
 #include "Csv.h"
 #include "Common.h"
+#include "Config.h"
 
 #include "Framework.h"
 #include "Framework/Text.h"
@@ -61,7 +62,7 @@ void release_title()
 {
 	TitleSceneData* data = (TitleSceneData*)g_Scene.Data;
 
-	Audio_FreeMusic(&data->TitleBGM);
+	//Audio_FreeMusic(&data->TitleBGM);
 
 	SafeFree(g_Scene.Data);
 }
@@ -84,8 +85,8 @@ void init_description()
 
 	Image_LoadImage(&data->DescriptionImage, "description.png");
 
-	Audio_LoadMusic(&data->DescriptionBGM, "space_bgm.mp3");
-	Audio_PlayFadeIn(&data->DescriptionBGM, INFINITY_LOOP, 3000);
+	//Audio_LoadMusic(&data->DescriptionBGM, "space_bgm.mp3");
+	//Audio_PlayFadeIn(&data->DescriptionBGM, INFINITY_LOOP, 3000);
 }
 
 void update_description()
@@ -115,7 +116,7 @@ void release_description()
 {
 	DescriptionSceneData* data = (DescriptionSceneData*)g_Scene.Data;
 
-	Audio_FreeMusic(&data->DescriptionBGM);
+	//Audio_FreeMusic(&data->DescriptionBGM);
 
 	SafeFree(g_Scene.Data);
 }
@@ -137,18 +138,17 @@ bool isCreated = false;
 
 int sceneNumber = 1;
 char* imageName;
+char* soundName;
 
 typedef struct MainSceneOption
 {
-	//선택지 1 / 선택지 1에 대한 씬 번호 / 선택지 2 / 선택지 2에 대한 씬 번호 / 선택지 3(타이머로 인한 선택지) / 선택지 3에 대한 씬 번호 / 엔딩 옵션
-	int32 SceneOption;	// 씬 옵션
-	bool TimerOption[4];	// 타이머 옵션
+	int32 SceneOption;
+	bool TimerOption[4];
 	Text StoryText;
 } MainSceneOption;
 
 typedef struct StorySceneData
 {
-	//int32	SceneNumber;	// 씬 번호
 	Text	TestText;
 	int32	FontSize;
 	int32	RenderMode;
@@ -161,7 +161,7 @@ void init_story()
 {
 	if (!isCreated)
 	{
-		CreateCsvFile(&csvFile, "TEST.csv");
+		CreateCsvFile(&csvFile, "TEST7.csv");
 		isCreated = true;
 	}
 
@@ -175,16 +175,10 @@ void init_story()
 		for (int c = 0; c < csvFile.ColumnCount; ++c)
 		{
 			wchar_t* str = ParseToUnicode(csvFile.Items[r][c]);
-			Text_CreateText(&CsvText[r][c], "d2coding.ttf", 16, str, wcslen(str));
+			Text_CreateText(&CsvText[r][c], "d2coding.ttf", 30, str, wcslen(str));
 		}
 	}
 	
-
-
-	/*wchar_t* str = ParseToUnicode(csvFile.Items[sceneNumber][1]);
-
-	Text_CreateText(&CsvText[sceneNumber][1], "d2coding.ttf", 16, str, wcslen(str));
-	free(str);*/
 
 	/*for (int c = 0; c < csvFile.ColumnCount; ++c)
 	{
@@ -194,13 +188,9 @@ void init_story()
 		free(str);
 	}*/
 
-
-	data->FontSize = 24;
-
-	data->RenderMode = SOLID;
+	data->RenderMode = BLENDED;
 	Image_LoadImage(&data->BackgroundImage, imageName);
-
-	//Audio_LoadMusic(&data->BackgroundMusic, &imageName);
+	//Audio_LoadMusic(&data->BackgroundMusic, soundName);
 	//Audio_PlayFadeIn(&data->BackgroundMusic, INFINITY_LOOP, 3000);
 
 
@@ -223,18 +213,16 @@ void update_story()
 	{
 		++sceneNumber;
 	}
-	for (int r = 1; r < csvFile.RowCount; ++r)
-	{
-		for (int c = 0; c < csvFile.ColumnCount; ++c)
-		{
-			if (r == sceneNumber && c == 2)
-			{
-				imageName = ParseToAscii(csvFile.Items[r][c]);
 
-			}
-		}
+	if (sceneNumber == MAX_SCENE)
+	{
+		Scene_SetNextScene(SCENE_MAX);
 	}
+
+	imageName = ParseToAscii(csvFile.Items[sceneNumber][2]);
+	soundName = ParseToAscii(csvFile.Items[sceneNumber][3]);
 	Image_LoadImage(&data->BackgroundImage, imageName);
+	//Audio_LoadMusic(&data->BackgroundMusic, soundName);
 	
 }
 
@@ -251,15 +239,15 @@ void render_story()
 	//	}
 	//}
 
-	Renderer_DrawImage(&data->BackgroundImage, 0, 0);
+	
 
 	/*for (int r = 0; r < csvFile.RowCount; ++r)
 	{
 		Renderer_DrawTextSolid(&CsvText[1][r], 30 * 4, 150 * r, color);
 	}*/
 
-	//Renderer_DrawTextSolid(&CsvText[1][r], 30 * 4, 150 * r, color);
-	Renderer_DrawTextSolid(&CsvText[sceneNumber][1], 30 * 2, 150 * 1, color);
+	Renderer_DrawImage(&data->BackgroundImage, 0, 0);
+	Renderer_DrawTextBlended(&CsvText[sceneNumber][1], 30 * 2, 150 * 4, color);
 	
 
 	/*switch (data->RenderMode)
@@ -291,8 +279,7 @@ void release_story()
 {
 	StorySceneData* data = (StorySceneData*)g_Scene.Data;
 
-	Audio_FreeMusic(&data->BackgroundMusic);
-	//Text_FreeText(&data->TestText);
+	//Audio_FreeMusic(&data->BackgroundMusic);
 	Text_FreeText(&data->TestText);
 	SafeFree(g_Scene.Data);
 

@@ -1,0 +1,13 @@
+Scene|text|image|BGM|SE|Type|Option1|Option1_nextscene|Option2|Option2_nextscene|Option3|Option3_nextscene|Timeout|Next Scene|Effect|
+1|"머리가 깨질 듯이 아프다.
+밀려오는 두통에 천천히 눈을 떴다."|scene1.png|||0||||||||2||
+2||scene2.png|||1||||||||3|3|
+3|"서슬 퍼런 쇠창살과 대리석 벽이 보인다.
+처음 보는 풍경에 불안해진다.
+“여긴 어디지?""
+나는 일단 주위를 둘러보았다.
+무언가를 가둬놓은 감옥 같은 분위기였다. 
+그 와중에 지속되는 두통이 나를 불쾌하게 만든다.
+특별한 목표나 무언가 기억 남는 게 있던 게 아니다.
+내가 이곳에 있는 거 자체도 이해가 안 되며 이곳은 왠지 위화감이 들었다."|scene3.png|||0||||||||4||
+4||scene4.png|||1||||||||5|3|
